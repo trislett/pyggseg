@@ -33,7 +33,7 @@ ggsegGlasser = importr('ggsegGlasser')
 # get the working directory
 scriptwd = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 
-def convert_aseg(atlasdata, dataname, label_file = "%s/static/aseg_labels.txt" % scriptwd):
+def convert_aseg(atlasdata, dataname, label_file = "%s/pyggseg/static/aseg_labels.txt" % scriptwd):
 	"""
 	Converts the freesurfer automatic segmentation (aseg) to an R object that can be read by ggseg.
 	Unfortunately, the accumbens is out of view. This isn't necessary IMO. Maybe I'll fix it for them later...
@@ -75,8 +75,8 @@ def convert_aseg(atlasdata, dataname, label_file = "%s/static/aseg_labels.txt" %
 	return(ratlasdata)
 
 def convert_glasser(atlasdata, dataname,
-			lannot = "%s/static/lh.hcp-mmp-b-fix.annot" % scriptwd,
-			rannot = "%s/static/rh.hcp-mmp-b-fix.annot" % scriptwd):
+			lannot = "%s/pyggseg/static/lh.hcp-mmp-b-fix.annot" % scriptwd,
+			rannot = "%s/pyggseg/static/rh.hcp-mmp-b-fix.annot" % scriptwd):
 	"""
 	Converts a modified version of the HCP_MMP1 atlas to an R object that can be read by ggseg.
 	

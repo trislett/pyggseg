@@ -3,4 +3,4 @@ include setup.py
 recursive-include pyggseg *
 recursive-include bin *
 global-exclude *.pyc
-include pyggseg/static/*
+
