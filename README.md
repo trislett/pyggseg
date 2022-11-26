@@ -1,2 +1,2 @@
 # pyggseg
-r2Py python port of ggseg and ggseg3d
+rpy2 python port of ggseg and ggseg3d
